@@ -98,12 +98,5 @@ void show()
 boolean fileExists(String path)
 {
         File file = new File(path);
-        boolean exists = file.exists();
-
-        if (exists) {
-                return true;
-        }
-        else {
-                return false;
-        }
+        return file.exists();
 }
